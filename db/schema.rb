@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20180416231019) do
   create_table "preferences", force: :cascade do |t|
     t.boolean "allow_create_artists"
     t.boolean "allow_create_songs"
+    t.string  "artist_sort_order"
+    t.string  "song_sort_order"
   end
 
   create_table "songs", force: :cascade do |t|
